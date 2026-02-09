@@ -54,7 +54,7 @@ for epoch in range(n_epochs):
         print(f"Epoch {epoch} | Cost: {cost(weights, X_train, y_train)}")
 
 # Prediction on test set
-predictions = [1 if circuit(weights, x) > 0.5 else 0 for x in X_test]
+predictions = [1 if circuit(weights, x) > 0.6 else 0 for x in X_test]
 
 # Accuracy calculation
 accuracy = np.mean(predictions == y_test)
